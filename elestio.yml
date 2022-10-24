@@ -2,39 +2,39 @@ ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
     listeningPort: "443"
-    targetPort: "21117"
+    targetPort: "22117"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
-    listeningPort: "21115"
-    targetPort: "21115"
+    listeningPort: "1115"
+    targetPort: "22115"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
-    listeningPort: "21116"
-    targetPort: "21116"
+    listeningPort: "1116"
+    targetPort: "22116"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
-    listeningPort: "21118"
-    targetPort: "21118"
+    listeningPort: "1118"
+    targetPort: "22118"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
-    listeningPort: "21119"
-    targetPort: "21119"
+    listeningPort: "1119"
+    targetPort: "22119"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
