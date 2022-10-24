@@ -3,8 +3,13 @@ version: '3'
 services:
   hbbs:
     container_name: hbbs
+    ports:
+      - 172.17.0.1:21115:21115
+      - 172.17.0.1:21116:21116
+      - 172.17.0.1:21116:21116/udp
+      - 172.17.0.1:21118:21118
     image: rustdesk/rustdesk-server:latest
-    command: hbbs -r ${DOMAIN}
+    command: hbbs -r ${DOMAIN}:21117
     volumes:
       - ./data:/root
     depends_on:
@@ -15,6 +20,7 @@ services:
     container_name: hbbr
     ports:
       - 172.17.0.1:21117:21117
+      - 172.17.0.1:21119:21119
     image: rustdesk/rustdesk-server:latest
     command: hbbr
     volumes:
