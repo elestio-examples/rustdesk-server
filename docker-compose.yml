@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  hbbs:
+    container_name: hbbs
+    image: rustdesk/rustdesk-server:latest
+    command: hbbs -r ${DOMAIN}
+    volumes:
+      - ./data:/root
+    depends_on:
+      - hbbr
+    restart: always
+
+  hbbr:
+    container_name: hbbr
+    ports:
+      - 172.17.0.1:21117:21117
+    image: rustdesk/rustdesk-server:latest
+    command: hbbr
+    volumes:
+      - ./data:/root
+    restart: always
