@@ -23,16 +23,16 @@ ports:
     public: true
     path: "/"
     isAuth: false
-  - protocol: "WEBSOCKET"
-    targetProtocol: "WEBSOCKET"
+  - protocol: "TCP"
+    targetProtocol: "TCP"
     listeningPort: "21118"
     targetPort: "21118"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
-  - protocol: "WEBSOCKET"
-    targetProtocol: "WEBSOCKET"
+  - protocol: "TCP"
+    targetProtocol: "TCP"
     listeningPort: "21119"
     targetPort: "21119"
     targetIP: "172.17.0.1"
