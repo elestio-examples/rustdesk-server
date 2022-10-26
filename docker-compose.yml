@@ -9,7 +9,7 @@ services:
       - 172.17.0.1:21116:21116/udp
       - 172.17.0.1:21118:21118
     image: rustdesk/rustdesk-server:latest
-    command: hbbs -r ${DOMAIN}:21117
+    command: hbbs -r ${DOMAIN}
     volumes:
       - ./data:/root
     depends_on:
