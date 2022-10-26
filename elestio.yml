@@ -1,15 +1,15 @@
 ports:
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
+  - protocol: "TCP"
+    targetProtocol: "TCP"
     listeningPort: "443"
     targetPort: "21117"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
-    listeningPort: "1115"
+  - protocol: "TCP"
+    targetProtocol: "TCP"
+    listeningPort: "21115"
     targetPort: "21115"
     targetIP: "172.17.0.1"
     public: true
@@ -17,23 +17,23 @@ ports:
     isAuth: false
   - protocol: "UDP"
     targetProtocol: "UDP"
-    listeningPort: "1116"
+    listeningPort: "21116"
     targetPort: "21116"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
-    listeningPort: "1118"
+  - protocol: "WEBSOCKET"
+    targetProtocol: "WEBSOCKET"
+    listeningPort: "21118"
     targetPort: "21118"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
-    listeningPort: "1119"
+  - protocol: "WEBSOCKET"
+    targetProtocol: "WEBSOCKET"
+    listeningPort: "21119"
     targetPort: "21119"
     targetIP: "172.17.0.1"
     public: true
