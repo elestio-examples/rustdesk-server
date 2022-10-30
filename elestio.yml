@@ -1,40 +1,40 @@
 ports:
   - protocol: "TCP"
     targetProtocol: "TCP"
-    listeningPort: "11117"
-    targetPort: "21117"
+    listeningPort: "21117"
+    targetPort: "11117"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "TCP"
     targetProtocol: "TCP"
-    listeningPort: "11115"
-    targetPort: "21115"
+    listeningPort: "21115"
+    targetPort: "11115"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "UDP"
     targetProtocol: "UDP"
-    listeningPort: "11116"
-    targetPort: "21116"
+    listeningPort: "21116"
+    targetPort: "11116"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "TCP"
     targetProtocol: "TCP"
-    listeningPort: "11118"
-    targetPort: "21118"
+    listeningPort: "21118"
+    targetPort: "11118"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
     isAuth: false
   - protocol: "TCP"
     targetProtocol: "TCP"
-    listeningPort: "11119"
-    targetPort: "21119"
+    listeningPort: "21119"
+    targetPort: "11119"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
