@@ -3,10 +3,10 @@ version: '3'
 services:
   hbbs:
     ports:
-      - 172.17.0.1:11115:21115
-      - 172.17.0.1:11116:21116
-      - 172.17.0.1:11116:21116/udp
-      - 172.17.0.1:11118:21118
+      - 21115:21115
+      - 21116:21116
+      - 21116:21116/udp
+      - 21118:21118
     image: rustdesk/rustdesk-server:latest
     command: hbbs -r ${DOMAIN}:21117
     volumes:
@@ -17,8 +17,8 @@ services:
 
   hbbr:
     ports:
-      - 172.17.0.1:11117:21117
-      - 172.17.0.1:11119:21119
+      - 21117:21117
+      - 21119:21119
     image: rustdesk/rustdesk-server:latest
     command: hbbr
     volumes:
