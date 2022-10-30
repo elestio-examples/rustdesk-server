@@ -10,7 +10,7 @@ Deploy Rustdesk Server with CI/CD on Elestio
 
 # Once deployed ...
 
-Download Rustdesk client in this link <a target="_blank" href="https://rustdesk.com/"></a>
+Download Rustdesk client in this link: <a target="_blank" href="https://rustdesk.com/">Rustdesk client</a>
 
 Then, once installed, click on the Menu button [ ⋮ ] on the right side of ID as shown below, and choose “ID/Relay Server”.
 
