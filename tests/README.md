@@ -60,7 +60,7 @@ Here are some example snippets to help you get started creating a container.
                 - 21116:21116
                 - 21116:21116/udp
                 - 21118:21118
-            image: rustdesk/rustdesk-server:latest
+            image: elestio4test/rustdesk-server:latest
             command: hbbs -r ${DOMAIN}:21117
         volumes:
             - ./data:/root
