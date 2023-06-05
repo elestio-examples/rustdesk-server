@@ -36,7 +36,7 @@ Copy the .env file from tests folder to the project directory
 
 Edit the .env file with your own values.
 
-Create volumes:
+Create data folders with correct permissions:
 
     mkdir -p -m 750 ./data
     chown -R 1000:1000 ./data
