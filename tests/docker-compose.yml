@@ -8,7 +8,7 @@ services:
       - 21116:21116/udp
       - 21118:21118
     image: elestio4test/rustdesk-server:latest
-    command: hbbs -r ${DOMAIN}:21117
+    command: hbbs -r 172.17.0.1:21117
     volumes:
       - ./data:/root
     depends_on:
