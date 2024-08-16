@@ -1,5 +1,4 @@
 version: "3.3"
-
 services:
   hbbs:
     ports:
@@ -7,19 +6,18 @@ services:
       - 21116:21116
       - 21116:21116/udp
       - 21118:21118
-    image: rustdesk/rustdesk-server:latest
+    image: rustdesk/rustdesk-server:${SOFTWARE_VERSION_TAG}
     command: hbbs -r ${DOMAIN}:21117
     volumes:
       - ./data:/root
     depends_on:
       - hbbr
     restart: always
-
   hbbr:
     ports:
       - 21117:21117
       - 21119:21119
-    image: rustdesk/rustdesk-server:latest
+    image: rustdesk/rustdesk-server:${SOFTWARE_VERSION_TAG}
     command: hbbr
     volumes:
       - ./data:/root
